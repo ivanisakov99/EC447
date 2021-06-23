@@ -1,4 +1,4 @@
-# <ins>Lab 3</ins>
+# <ins>Lab 3: Draw Circles with Scrolling</ins>
 
 Create an application that draws circles similar to the example from class that stores the coordinates in an ArrayList. Make the circles 15 x 15 pixels. 
 This is the same as lab 2 without the coordinate display.
