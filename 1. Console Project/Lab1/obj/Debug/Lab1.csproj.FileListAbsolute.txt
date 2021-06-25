@@ -5,3 +5,10 @@ C:\Users\Masha\Documents\VS\Lab1\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cac
 C:\Users\Masha\Documents\VS\Lab1\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
 C:\Users\Masha\Documents\VS\Lab1\Lab1\obj\Debug\Lab1.exe
 C:\Users\Masha\Documents\VS\Lab1\Lab1\obj\Debug\Lab1.pdb
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\bin\Debug\Lab1.exe.config
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\bin\Debug\Lab1.exe
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\bin\Debug\Lab1.pdb
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\obj\Debug\Lab1.csprojAssemblyReference.cache
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\obj\Debug\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\obj\Debug\Lab1.exe
+C:\Users\Masha\Desktop\vscode\EC447\1. Console Project\Lab1\obj\Debug\Lab1.pdb
