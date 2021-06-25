@@ -17,6 +17,7 @@ namespace Lab2
         public Form1()
         {
             InitializeComponent();
+            this.Text = "Lab 2 by Ivan Isakov";
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
