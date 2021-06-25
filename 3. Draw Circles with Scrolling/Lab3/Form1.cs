@@ -13,6 +13,7 @@ namespace Lab3
 {
     public partial class Form1 : Form
     {
+        // ArrayList for the coordinates
         private ArrayList coordinates = new ArrayList();
         public Form1()
         {
