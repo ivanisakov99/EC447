@@ -73,6 +73,7 @@ namespace Lab3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Changing the state of the button to show/hide the lines
             if(button1.Text.Equals("Show Lines"))
             {
                 button1.Text = "Hide Lines";

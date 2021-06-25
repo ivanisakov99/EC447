@@ -8,3 +8,13 @@ C:\Users\Masha\Documents\VS\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cac
 C:\Users\Masha\Documents\VS\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
 C:\Users\Masha\Documents\VS\Lab3\Lab3\obj\Debug\Lab3.exe
 C:\Users\Masha\Documents\VS\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\bin\Debug\Lab3.exe
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\bin\Debug\Lab3.pdb
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.csprojAssemblyReference.cache
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.Form1.resources
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.csproj.GenerateResource.cache
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.exe
+C:\Users\Masha\Desktop\vscode\EC447\3. Draw Circles with Scrolling\Lab3\obj\Debug\Lab3.pdb
