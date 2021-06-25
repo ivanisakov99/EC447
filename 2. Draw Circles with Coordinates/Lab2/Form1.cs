@@ -21,6 +21,7 @@ namespace Lab2
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
+            // Getting the graphics object
             Graphics g = e.Graphics;
 
             // Defining the radius for the circles
