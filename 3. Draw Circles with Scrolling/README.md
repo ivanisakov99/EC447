@@ -23,4 +23,4 @@ The folling requirements must be met:
 5. The circles must cover the line if one is displayed.
 6. The circles must FULLY cover the lines.
 
-//
+![Снимок экрана (6)](https://user-images.githubusercontent.com/60196280/123454983-d5714a80-d5e9-11eb-9800-3629c5fe57ef.png)
