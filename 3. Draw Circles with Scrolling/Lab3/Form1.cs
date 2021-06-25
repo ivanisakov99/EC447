@@ -17,7 +17,9 @@ namespace Lab3
         public Form1()
         {
             InitializeComponent();
+            // Lab 3 title
             this.Text = "Ivan Isakov - Lab 3";
+            // Virtual client area
             AutoScrollMinSize = new Size(2000, 1000);
         }
 
@@ -25,6 +27,7 @@ namespace Lab3
         {
             base.OnPaint(e);
 
+            // For scrolling
             int s_x = this.AutoScrollPosition.X;
             int s_y = this.AutoScrollPosition.Y;
 
@@ -33,13 +36,15 @@ namespace Lab3
 
             Graphics g = e.Graphics;
 
+            // Initialising a black pen and the start/end points to draw the lines
             Pen black_pen = new Pen(Color.Black, 1);
             Point p1 = new Point(-1, -1);
             Point p2 = new Point(-1, -1);
             
-
+            // If "Show Lines" is clicked, then draw the lines
             if (button1.Text.Equals("Hide Lines"))
             {
+                // Draw the lines from one circle to the next one in the array order
                 foreach(Point p in this.coordinates)
                 {
                     Point p3 = new Point(s_x + p.X, s_y + p.Y);
@@ -59,6 +64,7 @@ namespace Lab3
                 }
             }
 
+            // Draw the circles
             foreach (Point p in this.coordinates)
             {
                 g.FillEllipse(Brushes.Red, p.X - size / 2 + s_x, p.Y - size / 2 + s_y, size, size);
@@ -80,13 +86,14 @@ namespace Lab3
 
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
+            // For scrolling
             int s_x = this.AutoScrollPosition.X;
             int s_y = this.AutoScrollPosition.Y;
 
             // Left mouse click saves the coordinates of the click
             if (e.Button == MouseButtons.Left)
             {
-            
+                // Add the coordinates with the scrolling offset
                 Point points = new Point(e.X - s_x, e.Y - s_y);
                 this.coordinates.Add(points);
                 this.Invalidate();

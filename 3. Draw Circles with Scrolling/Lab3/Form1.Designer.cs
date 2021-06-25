@@ -48,7 +48,7 @@ namespace Lab3
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(924, 444);
+            this.ClientSize = new System.Drawing.Size(1078, 644);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
