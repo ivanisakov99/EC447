@@ -37,6 +37,9 @@ namespace Lab3
 
             Graphics g = e.Graphics;
 
+            // Translate the origin
+            g.TranslateTransform(s_x, s_y);
+
             // Initialising a black pen and the start/end points to draw the lines
             Pen black_pen = new Pen(Color.Black, 1);
             Point p1 = new Point(-1, -1);
@@ -48,15 +51,13 @@ namespace Lab3
                 // Draw the lines from one circle to the next one in the array order
                 foreach(Point p in this.coordinates)
                 {
-                    Point p3 = new Point(s_x + p.X, s_y + p.Y);
-
                     if (p1.X == -1 && p1.Y == -1)
                     {
-                        p1 = p3;
+                        p1 = p;
                     }
                     else
                     {
-                        p2 = p3;
+                        p2 = p;
 
                         g.DrawLine(black_pen, p1, p2);
 
@@ -68,7 +69,7 @@ namespace Lab3
             // Draw the circles
             foreach (Point p in this.coordinates)
             {
-                g.FillEllipse(Brushes.Red, p.X - size / 2 + s_x, p.Y - size / 2 + s_y, size, size);
+                g.FillEllipse(Brushes.Red, p.X - size / 2, p.Y - size / 2, size, size);
             }
         }
 
