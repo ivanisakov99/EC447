@@ -22,6 +22,7 @@ namespace Lab3
             this.Text = "Ivan Isakov - Lab 3";
             // Virtual client area
             AutoScrollMinSize = new Size(2000, 1000);
+            this.ResizeRedraw = true;
         }
 
         protected override void OnPaint(PaintEventArgs e)
