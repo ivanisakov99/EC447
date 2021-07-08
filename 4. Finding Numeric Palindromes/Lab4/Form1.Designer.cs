@@ -46,9 +46,9 @@ namespace Lab4
             this.Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Title.Location = new System.Drawing.Point(300, 70);
             this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(613, 55);
+            this.Title.Size = new System.Drawing.Size(118, 55);
             this.Title.TabIndex = 0;
-            this.Title.Text = "Find Numeric Palindromes";
+            this.Title.Text = "Title";
             // 
             // MyName
             // 
@@ -56,36 +56,36 @@ namespace Lab4
             this.MyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MyName.Location = new System.Drawing.Point(535, 158);
             this.MyName.Name = "MyName";
-            this.MyName.Size = new System.Drawing.Size(161, 29);
+            this.MyName.Size = new System.Drawing.Size(110, 29);
             this.MyName.TabIndex = 1;
-            this.MyName.Text = "by Ivan Isakov";
+            this.MyName.Text = "My name";
             // 
             // Start_Num_Label
             // 
             this.Start_Num_Label.AutoSize = true;
             this.Start_Num_Label.Location = new System.Drawing.Point(220, 292);
             this.Start_Num_Label.Name = "Start_Num_Label";
-            this.Start_Num_Label.Size = new System.Drawing.Size(313, 20);
+            this.Start_Num_Label.Size = new System.Drawing.Size(134, 20);
             this.Start_Num_Label.TabIndex = 2;
-            this.Start_Num_Label.Text = "Enter a starting integer (1 - 1,000,000,000):";
+            this.Start_Num_Label.Text = "Start_Num_Label";
             // 
             // Range_Label
             // 
             this.Range_Label.AutoSize = true;
             this.Range_Label.Location = new System.Drawing.Point(739, 292);
             this.Range_Label.Name = "Range_Label";
-            this.Range_Label.Size = new System.Drawing.Size(159, 20);
+            this.Range_Label.Size = new System.Drawing.Size(105, 20);
             this.Range_Label.TabIndex = 3;
-            this.Range_Label.Text = "Enter count (1 - 100):";
+            this.Range_Label.Text = "Range_Label";
             // 
             // Int_Warning
             // 
             this.Int_Warning.AutoSize = true;
-            this.Int_Warning.Location = new System.Drawing.Point(457, 614);
+            this.Int_Warning.Location = new System.Drawing.Point(458, 624);
             this.Int_Warning.Name = "Int_Warning";
-            this.Int_Warning.Size = new System.Drawing.Size(314, 20);
+            this.Int_Warning.Size = new System.Drawing.Size(96, 20);
             this.Int_Warning.TabIndex = 4;
-            this.Int_Warning.Text = "Please enter a positive integer within range.";
+            this.Int_Warning.Text = "Int_Warning";
             this.Int_Warning.Visible = false;
             // 
             // Start_Num
@@ -117,7 +117,7 @@ namespace Lab4
             this.Generate_Btn.Name = "Generate_Btn";
             this.Generate_Btn.Size = new System.Drawing.Size(123, 34);
             this.Generate_Btn.TabIndex = 8;
-            this.Generate_Btn.Text = "Generate";
+            this.Generate_Btn.Text = "Generate_Btn";
             this.Generate_Btn.UseVisualStyleBackColor = true;
             this.Generate_Btn.Click += new System.EventHandler(this.Generate_Btn_Click);
             // 

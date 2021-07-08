@@ -16,14 +16,28 @@ namespace Lab4
         {
             InitializeComponent();
 
-            // Title for the lab
             this.Text = "Ivan Isakov - Lab 4";
+
+            Title.Text = "Find Numeric Palindromes";
+
+            MyName.Text = "by Ivan Isakov";
+
+            Generate_Btn.Text = "Generate";
+
+            Start_Num_Label.Text = "Enter a starting integer (0 - 1,000,000,000):";
+
+            Range_Label.Text = "Enter count (1 - 100):";
+
+            // Warning message
+            Int_Warning.Text = "Please enter a positive integer within range.";
+            // Warning not visible in the beginning
+            Int_Warning.Visible = false;
         }
 
         private void Generate_Btn_Click(object sender, EventArgs e)
         {
             // Button Text
-            this.Text = "Generate";
+            //this.Generate_Btn.Text = "Generate";
 
             // Palindrome List 
             List<int> palindromes = new List<int>();
