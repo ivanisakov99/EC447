@@ -1,0 +1,10 @@
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.csprojAssemblyReference.cache
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.Form1.resources
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.Properties.Resources.resources
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.csproj.GenerateResource.cache
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Masha\Desktop\Lab4\Lab4\bin\Debug\Lab4.exe.config
+C:\Users\Masha\Desktop\Lab4\Lab4\bin\Debug\Lab4.exe
+C:\Users\Masha\Desktop\Lab4\Lab4\bin\Debug\Lab4.pdb
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.exe
+C:\Users\Masha\Desktop\Lab4\Lab4\obj\Debug\Lab4.pdb
