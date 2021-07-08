@@ -9,7 +9,7 @@ left to right. For example, 1234321.
 4. The list box is sized to the approximate width in my example and has 10 rows.
 5. A label control is at the bottom for user feedback.
 6. You must have a form title as well as a heading on the page that follows the example. Use labels and match font sizes. DO NOT USE A PAINT EVENT
-7. No unhandled exceptions are allowed. Test, test, and test some more.
-8. I tested for a palindrome by converting the number to a string, reversing the string and comparing to the original. You can use another technique.
+7. No unhandled exceptions are allowed.
+8. I tested for a palindrome by converting the number to a string, reversing the string and comparing to the original.
 
 ![Снимок экрана (9)](https://user-images.githubusercontent.com/60196280/124846165-d8344e00-dfa0-11eb-8134-cabba5386da1.png)
