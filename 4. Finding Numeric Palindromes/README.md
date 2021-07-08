@@ -6,7 +6,7 @@ left to right. For example, 1234321.
 1. There are two text boxes for the starting value and the number of palindromes to generate.
 2. You MUST check for conversion errors and numbers out of range such as negative, too large or small.
 3. The button must be labelled properly.
-4. The list box is sized to the approximate width in my exammple and has 10 rows.
+4. The list box is sized to the approximate width in my example and has 10 rows.
 5. A label control is at the bottom for user feedback.
 6. You must have a form title as well as a heading on the page that follows the example. Use labels and match font sizes. DO NOT USE A PAINT EVENT
 7. No unhandled exceptions are allowed. Test, test, and test some more.
