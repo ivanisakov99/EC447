@@ -53,10 +53,10 @@ namespace Lab4
             // MyName
             // 
             this.MyName.AutoSize = true;
-            this.MyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MyName.Location = new System.Drawing.Point(535, 158);
             this.MyName.Name = "MyName";
-            this.MyName.Size = new System.Drawing.Size(175, 29);
+            this.MyName.Size = new System.Drawing.Size(161, 29);
             this.MyName.TabIndex = 1;
             this.MyName.Text = "by Ivan Isakov";
             // 

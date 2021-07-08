@@ -16,7 +16,7 @@ namespace Lab4
         {
             InitializeComponent();
 
-            // Title
+            // Title for the lab
             this.Text = "Ivan Isakov - Lab 4";
         }
 
@@ -35,7 +35,6 @@ namespace Lab4
                 P_List.DataSource = palindromes;
 
                 // Issue a Warning
-                //Int_Warning.Text = "Please enter a positive integer within range.";
                 Int_Warning.Visible = true;
                 return;
             }
@@ -97,12 +96,13 @@ namespace Lab4
             {
                 b = true;
 
+                // Convert to string
                 temp = start.ToString();
 
                 n = temp.Length;
 
                 // Check if its a valid palindrome
-                for (int i = 0; i < n; i++)
+                for (int i = 0; i < n/2; i++)
                 {
                     if (temp[i] != temp[n - 1 - i])
                     {
