@@ -36,12 +36,10 @@ namespace Lab4
 
         private void Generate_Btn_Click(object sender, EventArgs e)
         {
-            // Button Text
-            //this.Generate_Btn.Text = "Generate";
-
             // Palindrome List 
             List<int> palindromes = new List<int>();
-
+            
+            
             // Error check the size of the input
             if (Start_Num.Text.Length <= 0 || Start_Num.Text.Length > 10 || Select_Range.Text.Length <= 0 || Select_Range.Text.Length > 10)
             {
@@ -97,7 +95,7 @@ namespace Lab4
 
             // Passed every error check, clear the warning
             Int_Warning.Visible = false;
-
+            
             // Valid palindrome
             bool b;
 
