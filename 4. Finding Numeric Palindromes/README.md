@@ -12,4 +12,4 @@ left to right. For example, 1234321.
 7. No unhandled exceptions are allowed.
 8. I tested for a palindrome by converting the number to a string, reversing the string and comparing to the original.
 
-![Снимок экрана (9)](https://user-images.githubusercontent.com/60196280/124846165-d8344e00-dfa0-11eb-8134-cabba5386da1.png)
+![Снимок экрана (11)](https://user-images.githubusercontent.com/60196280/125200657-ab1fbe00-e274-11eb-988f-befcc9c2ac87.png)
