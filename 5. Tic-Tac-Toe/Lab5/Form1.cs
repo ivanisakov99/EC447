@@ -13,19 +13,19 @@ namespace Lab5
 {
     public partial class Form1 : Form
     {
-        //
+        // Cell enum
         public enum CellContent { N, O, X };
 
-        //
+        // Dimesions
         private const float CLIENTSIZE = 100;
         private const float LINELENGTH = 80;
         private const float BLOCK = LINELENGTH / 3;
         private const float OFFSET = 10;
         private const float DELTA = 5;
-        //
+        // Scale factor
         private float scale;
 
-        //
+        // Initialise the game engine
         public GameEngine TicTacToeGame;
 
         public Form1()
@@ -98,7 +98,7 @@ namespace Lab5
             }
 
             // After the first turn
-            if(TicTacToeGame.numOfMoves > 0) //new
+            if(TicTacToeGame.numOfMoves >= 0)
             {
                 computerStartsToolStripMenuItem.Enabled = false;
                 TicTacToeGame.startingPlayer = GameEngine.startState.user;

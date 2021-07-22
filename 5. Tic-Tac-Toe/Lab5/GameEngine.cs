@@ -137,23 +137,24 @@ namespace Lab5
                     this.isWinner(currentGame);
                     this.computerMove(currentGame);
                 }
-            }
-            else
-            {
-                MessageBox.Show("Invalid! That cell is taken!");
+                else
+                {
+                    MessageBox.Show("Invalid! Cell taken!");
+                }
             }
         }
 
         // Computer move logic
         public void computerMove(GameEngine currentGame)
         {
-            if (!gameRunning)
+            // Game ended
+            /*if (!gameRunning)
             {
                 player = whosMove.user;
                 //isWinner(currentGame);
                 return;
-            }
-            else if(startingPlayer == startState.user && gameRunning)
+            }*/
+            if(startingPlayer == startState.user && gameRunning)
             {
                 // Diagonal 1
                 if(compGraph[6] == 2)
@@ -242,14 +243,14 @@ namespace Lab5
                     }
                 }
 
-                // row zero
+                // Row 0
                 if (compGraph[0] == 2)
                 {
-                    if ((currentGame.grid[0, 0] == currentGame.grid[0, 1]) && currentGame.grid[0, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 0] == currentGame.grid[0, 1]) && currentGame.grid[0, 1] != CellContent.N)
                     {
                         if (currentGame.grid[0, 2] == CellContent.N)
                         {
-                            currentGame.grid[0, 2] = CellContent.O;                          // finish row
+                            currentGame.grid[0, 2] = CellContent.O;
                             compGraph[0]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -257,11 +258,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 0] == currentGame.grid[0, 2]) && currentGame.grid[0, 2] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 0] == currentGame.grid[0, 2]) && currentGame.grid[0, 2] != CellContent.N)
                     {
                         if (currentGame.grid[0, 1] == CellContent.N)
                         {
-                            currentGame.grid[0, 1] = CellContent.O;                          // finish row
+                            currentGame.grid[0, 1] = CellContent.O;
                             compGraph[0]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -269,11 +270,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 1] == currentGame.grid[0, 2]) && currentGame.grid[0, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 1] == currentGame.grid[0, 2]) && currentGame.grid[0, 1] != CellContent.N)
                     {
                         if (currentGame.grid[0, 0] == CellContent.N)
                         {
-                            currentGame.grid[0, 0] = CellContent.O;                          // finish row
+                            currentGame.grid[0, 0] = CellContent.O;
                             compGraph[0]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -283,14 +284,14 @@ namespace Lab5
                     }
                 }
 
-                if (compGraph[1] == 2)                  //  check row 1
+                // Row 1
+                if (compGraph[1] == 2)
                 {
-                    // row1
-                    if ((currentGame.grid[1, 0] == currentGame.grid[1, 1]) && currentGame.grid[1, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[1, 0] == currentGame.grid[1, 1]) && currentGame.grid[1, 1] != CellContent.N)
                     {
                         if (currentGame.grid[1, 2] == CellContent.N)
                         {
-                            currentGame.grid[1, 2] = CellContent.O;                          // finish row
+                            currentGame.grid[1, 2] = CellContent.O;
                             compGraph[1]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -298,11 +299,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[1, 0] == currentGame.grid[1, 2]) && currentGame.grid[1, 2] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[1, 0] == currentGame.grid[1, 2]) && currentGame.grid[1, 2] != CellContent.N)
                     {
                         if (currentGame.grid[1, 1] == CellContent.N)
                         {
-                            currentGame.grid[1, 1] = CellContent.O;                          // finish row
+                            currentGame.grid[1, 1] = CellContent.O;
                             compGraph[1]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -310,11 +311,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    else if ((currentGame.grid[1, 1] == currentGame.grid[1, 2]) && currentGame.grid[1, 1] != CellContent.N)            // first two are equal
+                    else if ((currentGame.grid[1, 1] == currentGame.grid[1, 2]) && currentGame.grid[1, 1] != CellContent.N)
                     {
                         if (currentGame.grid[1, 0] == CellContent.N)
                         {
-                            currentGame.grid[1, 0] = CellContent.O;                          // finish row
+                            currentGame.grid[1, 0] = CellContent.O;
                             compGraph[1]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -324,13 +325,14 @@ namespace Lab5
                     }
                 }
 
-                if (compGraph[2] == 2)                                                  // row2
+                // Row 2
+                if (compGraph[2] == 2)
                 {
-                    if ((currentGame.grid[2, 0] == currentGame.grid[2, 1]) && currentGame.grid[2, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[2, 0] == currentGame.grid[2, 1]) && currentGame.grid[2, 1] != CellContent.N)
                     {
                         if (currentGame.grid[2, 2] == CellContent.N)
                         {
-                            currentGame.grid[2, 2] = CellContent.O;                          // finish row
+                            currentGame.grid[2, 2] = CellContent.O;
                             compGraph[2]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -338,11 +340,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[2, 0] == currentGame.grid[2, 2]) && currentGame.grid[2, 2] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[2, 0] == currentGame.grid[2, 2]) && currentGame.grid[2, 2] != CellContent.N)
                     {
                         if (currentGame.grid[2, 1] == CellContent.N)
                         {
-                            currentGame.grid[2, 1] = CellContent.O;                          // finish row
+                            currentGame.grid[2, 1] = CellContent.O;
                             compGraph[2]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -350,11 +352,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[2, 1] == currentGame.grid[2, 2]) && currentGame.grid[2, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[2, 1] == currentGame.grid[2, 2]) && currentGame.grid[2, 1] != CellContent.N)
                     {
                         if (currentGame.grid[2, 0] == CellContent.N)
                         {
-                            currentGame.grid[2, 0] = CellContent.O;                          // finish row
+                            currentGame.grid[2, 0] = CellContent.O;
                             compGraph[2]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -364,14 +366,14 @@ namespace Lab5
                     }
                 }
 
+                // Column 0
                 if (compGraph[3] == 2)
                 {
-                    // col0
-                    if ((currentGame.grid[0, 0] == currentGame.grid[1, 0]) && currentGame.grid[1, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 0] == currentGame.grid[1, 0]) && currentGame.grid[1, 0] != CellContent.N)
                     {
                         if (currentGame.grid[2, 0] == CellContent.N)
                         {
-                            currentGame.grid[2, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[2, 0] = CellContent.O;
                             compGraph[3]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -379,11 +381,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 0] == currentGame.grid[2, 0]) && currentGame.grid[0, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 0] == currentGame.grid[2, 0]) && currentGame.grid[0, 0] != CellContent.N)
                     {
                         if (currentGame.grid[1, 0] == CellContent.N)
                         {
-                            currentGame.grid[1, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[1, 0] = CellContent.O;
                             compGraph[3]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -391,11 +393,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[1, 0] == currentGame.grid[2, 0]) && currentGame.grid[1, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[1, 0] == currentGame.grid[2, 0]) && currentGame.grid[1, 0] != CellContent.N)
                     {
                         if (currentGame.grid[0, 0] == CellContent.N)
                         {
-                            currentGame.grid[0, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[0, 0] = CellContent.O;
                             compGraph[3]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -405,13 +407,14 @@ namespace Lab5
                     }
                 }
 
-                if (compGraph[4] == 2)              // col1
+                // Column 1 //
+                if (compGraph[4] == 2)
                 {
-                    if ((currentGame.grid[0, 1] == currentGame.grid[1, 1]) && currentGame.grid[1, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 1] == currentGame.grid[1, 1]) && currentGame.grid[1, 1] != CellContent.N)
                     {
-                        if (currentGame.grid[2, 0] == CellContent.N)
+                        if (currentGame.grid[2, 1] == CellContent.N)//
                         {
-                            currentGame.grid[2, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[2, 1] = CellContent.O;//
                             compGraph[4]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -419,11 +422,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 1] == currentGame.grid[2, 1]) && currentGame.grid[0, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 1] == currentGame.grid[2, 1]) && currentGame.grid[0, 1] != CellContent.N)
                     {
                         if (currentGame.grid[1, 1] == CellContent.N)
                         {
-                            currentGame.grid[1, 1] = CellContent.O;                          // finish col
+                            currentGame.grid[1, 1] = CellContent.O;
                             compGraph[4]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -431,11 +434,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[1, 1] == currentGame.grid[2, 1]) && currentGame.grid[1, 1] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[1, 1] == currentGame.grid[2, 1]) && currentGame.grid[1, 1] != CellContent.N)
                     {
                         if (currentGame.grid[0, 1] == CellContent.N)
                         {
-                            currentGame.grid[0, 1] = CellContent.O;                          // finish col
+                            currentGame.grid[0, 1] = CellContent.O;
                             compGraph[4]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -445,14 +448,14 @@ namespace Lab5
                     }
                 }
 
+                // Column 2 //
                 if (compGraph[5] == 2)
                 {
-                    // col2
-                    if ((currentGame.grid[0, 0] == currentGame.grid[1, 0]) && currentGame.grid[1, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 2] == currentGame.grid[1, 2]) && currentGame.grid[1, 2] != CellContent.N)//
                     {
-                        if (currentGame.grid[2, 0] == CellContent.N)
+                        if (currentGame.grid[2, 2] == CellContent.N)//
                         {
-                            currentGame.grid[2, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[2, 2] = CellContent.O;//
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -460,11 +463,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 0] == currentGame.grid[2, 0]) && currentGame.grid[0, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[0, 2] == currentGame.grid[2, 2]) && currentGame.grid[0, 2] != CellContent.N)//
                     {
-                        if (currentGame.grid[1, 0] == CellContent.N)
+                        if (currentGame.grid[1, 2] == CellContent.N)//
                         {
-                            currentGame.grid[1, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[1, 2] = CellContent.O;//
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -472,11 +475,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[1, 0] == currentGame.grid[2, 0]) && currentGame.grid[1, 0] != CellContent.N)            // first two are equal
+                    if ((currentGame.grid[1, 2] == currentGame.grid[2, 2]) && currentGame.grid[1, 2] != CellContent.N)//
                     {
-                        if (currentGame.grid[0, 0] == CellContent.N)
+                        if (currentGame.grid[0, 2] == CellContent.N)//
                         {
-                            currentGame.grid[0, 0] = CellContent.O;                          // finish col
+                            currentGame.grid[0, 2] = CellContent.O;//
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -486,7 +489,8 @@ namespace Lab5
                     }
                 }
 
-                if (currentGame.grid[1, 1] == GameEngine.CellContent.N)  // if can't win, try to fill diagonals
+                // Centre
+                if (currentGame.grid[1, 1] == GameEngine.CellContent.N)
                 {           // center
                     currentGame.grid[1, 1] = GameEngine.CellContent.O;
                     compGraph[1]++;
@@ -499,8 +503,9 @@ namespace Lab5
                     return;
                 }
 
+                // Top Left
                 if (currentGame.grid[0, 0] == GameEngine.CellContent.N)
-                {            // top left
+                {
                     currentGame.grid[0, 0] = GameEngine.CellContent.O;
                     compGraph[0]++;
                     compGraph[3]++;
@@ -511,8 +516,9 @@ namespace Lab5
                     return;
                 }
 
+                // Bottom Right
                 if (currentGame.grid[2, 2] == GameEngine.CellContent.N)
-                {            // bottom right
+                {
                     currentGame.grid[2, 2] = GameEngine.CellContent.O;
                     compGraph[2]++;
                     compGraph[5]++;
@@ -523,8 +529,9 @@ namespace Lab5
                     return;
                 }
 
+                // Top Right
                 if (currentGame.grid[0, 2] == GameEngine.CellContent.N)
-                {           // top right
+                {
                     currentGame.grid[0, 2] = GameEngine.CellContent.O;
                     compGraph[0]++;
                     compGraph[5]++;
@@ -535,8 +542,9 @@ namespace Lab5
                     return;
                 }
 
+                // Bottom left
                 if (currentGame.grid[2, 0] == GameEngine.CellContent.N)
-                {            // bottom left
+                {
                     currentGame.grid[2, 0] = GameEngine.CellContent.O;
                     compGraph[2]++;
                     compGraph[3]++;
@@ -547,9 +555,9 @@ namespace Lab5
                     return;
                 }
 
-                // fill the randos if the corners and center are filled
+                // Top middle
                 if (currentGame.grid[0, 1] == GameEngine.CellContent.N)
-                {            // top mid
+                {
                     currentGame.grid[0, 1] = GameEngine.CellContent.O;
                     compGraph[0]++;
                     compGraph[4]++;
@@ -559,8 +567,9 @@ namespace Lab5
                     return;
                 }
 
+                // Bottom middle
                 if (currentGame.grid[2, 1] == GameEngine.CellContent.N)
-                {            // bottom mid
+                {
                     currentGame.grid[2, 1] = GameEngine.CellContent.O;
                     compGraph[2]++;
                     compGraph[4]++;
@@ -570,8 +579,9 @@ namespace Lab5
                     return;
                 }
 
+                // Middle Left
                 if (currentGame.grid[1, 0] == GameEngine.CellContent.N)
-                {            // mid left
+                {
                     currentGame.grid[1, 0] = GameEngine.CellContent.O;
                     compGraph[1]++;
                     compGraph[3]++;
@@ -581,8 +591,9 @@ namespace Lab5
                     return;
                 }
 
+                // Middle right
                 if (currentGame.grid[1, 2] == GameEngine.CellContent.N)
-                {            // mid right
+                {
                     currentGame.grid[1, 2] = GameEngine.CellContent.O;
                     compGraph[1]++;
                     compGraph[5]++;
@@ -598,15 +609,18 @@ namespace Lab5
                     return;
                 }*/
             }
+            // First move as a computer
             else if(startingPlayer == startState.computer && gameRunning)
             {
                 currentGame.grid[1, 1] = GameEngine.CellContent.O;
+                compGraph[6]++;
                 player = whosMove.user;
                 startingPlayer = startState.user;
                 currentGame.numOfMoves++;
                 isWinner(currentGame);
                 return;
             }
+            // Game ended
             else if (!gameRunning)
             {
                 return;
@@ -623,30 +637,33 @@ namespace Lab5
                     if(compGraph[i] == 3)
                     {
                         winner = gameState.computerWon;
+                        break;
                     }
                     
                     if(userGraph[i] == 3)
                     {
                         winner = gameState.userWon;
+                        break;
                     }
                 }
             }
 
+            // User won the game
             if(winner == gameState.userWon)
             {
                 gameRunning = false;
                 MessageBox.Show("You Win!");
                 return;
             }
-            
-            if(winner == gameState.computerWon)
+            // Computer won the game
+            else if(winner == gameState.computerWon)
             {
                 gameRunning = false;
                 MessageBox.Show("You Lose!");
                 return;
             }
-
-            if(currentGame.numOfMoves == 9 && gameRunning)
+            // Tie
+            else if(currentGame.numOfMoves == 9 && gameRunning)
             {
                 gameRunning = false;
                 winner = gameState.tie;
