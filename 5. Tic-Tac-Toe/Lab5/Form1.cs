@@ -101,7 +101,7 @@ namespace Lab5
             if(TicTacToeGame.numOfMoves >= 0)
             {
                 computerStartsToolStripMenuItem.Enabled = false;
-                TicTacToeGame.startingPlayer = GameEngine.startState.user;
+                //TicTacToeGame.startingPlayer = GameEngine.startState.user;
             }
 
             this.Invalidate();

@@ -147,13 +147,6 @@ namespace Lab5
         // Computer move logic
         public void computerMove(GameEngine currentGame)
         {
-            // Game ended
-            /*if (!gameRunning)
-            {
-                player = whosMove.user;
-                //isWinner(currentGame);
-                return;
-            }*/
             if(startingPlayer == startState.user && gameRunning)
             {
                 // Diagonal 1
@@ -407,14 +400,14 @@ namespace Lab5
                     }
                 }
 
-                // Column 1 //
+                // Column 1
                 if (compGraph[4] == 2)
                 {
                     if ((currentGame.grid[0, 1] == currentGame.grid[1, 1]) && currentGame.grid[1, 1] != CellContent.N)
                     {
-                        if (currentGame.grid[2, 1] == CellContent.N)//
+                        if (currentGame.grid[2, 1] == CellContent.N)
                         {
-                            currentGame.grid[2, 1] = CellContent.O;//
+                            currentGame.grid[2, 1] = CellContent.O;
                             compGraph[4]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -448,14 +441,14 @@ namespace Lab5
                     }
                 }
 
-                // Column 2 //
+                // Column 2
                 if (compGraph[5] == 2)
                 {
-                    if ((currentGame.grid[0, 2] == currentGame.grid[1, 2]) && currentGame.grid[1, 2] != CellContent.N)//
+                    if ((currentGame.grid[0, 2] == currentGame.grid[1, 2]) && currentGame.grid[1, 2] != CellContent.N)
                     {
-                        if (currentGame.grid[2, 2] == CellContent.N)//
+                        if (currentGame.grid[2, 2] == CellContent.N)
                         {
-                            currentGame.grid[2, 2] = CellContent.O;//
+                            currentGame.grid[2, 2] = CellContent.O;
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -463,11 +456,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[0, 2] == currentGame.grid[2, 2]) && currentGame.grid[0, 2] != CellContent.N)//
+                    if ((currentGame.grid[0, 2] == currentGame.grid[2, 2]) && currentGame.grid[0, 2] != CellContent.N)
                     {
-                        if (currentGame.grid[1, 2] == CellContent.N)//
+                        if (currentGame.grid[1, 2] == CellContent.N)
                         {
-                            currentGame.grid[1, 2] = CellContent.O;//
+                            currentGame.grid[1, 2] = CellContent.O;
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -475,11 +468,11 @@ namespace Lab5
                             return;
                         }
                     }
-                    if ((currentGame.grid[1, 2] == currentGame.grid[2, 2]) && currentGame.grid[1, 2] != CellContent.N)//
+                    if ((currentGame.grid[1, 2] == currentGame.grid[2, 2]) && currentGame.grid[1, 2] != CellContent.N)
                     {
-                        if (currentGame.grid[0, 2] == CellContent.N)//
+                        if (currentGame.grid[0, 2] == CellContent.N)
                         {
-                            currentGame.grid[0, 2] = CellContent.O;//
+                            currentGame.grid[0, 2] = CellContent.O;
                             compGraph[5]++;
                             player = whosMove.user;
                             this.numOfMoves++;
@@ -491,7 +484,7 @@ namespace Lab5
 
                 // Centre
                 if (currentGame.grid[1, 1] == GameEngine.CellContent.N)
-                {           // center
+                {
                     currentGame.grid[1, 1] = GameEngine.CellContent.O;
                     compGraph[1]++;
                     compGraph[4]++;
@@ -602,20 +595,17 @@ namespace Lab5
                     isWinner(currentGame);
                     return;
                 }
-
-                /*if (userMove)
-                {
-                    compMove = false;
-                    return;
-                }*/
             }
             // First move as a computer
             else if(startingPlayer == startState.computer && gameRunning)
             {
                 currentGame.grid[1, 1] = GameEngine.CellContent.O;
+                compGraph[1]++;
+                compGraph[4]++;
                 compGraph[6]++;
-                player = whosMove.user;
+                compGraph[7]++;
                 startingPlayer = startState.user;
+                player = whosMove.user;
                 currentGame.numOfMoves++;
                 isWinner(currentGame);
                 return;
