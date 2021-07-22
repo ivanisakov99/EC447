@@ -89,7 +89,6 @@ namespace Lab5
             }
             else if(gameRunning && player == whosMove.user)
             {
-                // new
                 if(currentGame.grid[i, j] == CellContent.N && e.Button == MouseButtons.Left)
                 {
                     currentGame.grid[i, j] = CellContent.X;
@@ -149,7 +148,7 @@ namespace Lab5
         {
             if(startingPlayer == startState.user && gameRunning)
             {
-                // Diagonal 1
+                // Left to Right Diagonal
                 if(compGraph[6] == 2)
                 {
                     if(currentGame.grid[0, 0] == currentGame.grid[1, 1] && currentGame.grid[0, 0] != CellContent.N)
@@ -192,7 +191,7 @@ namespace Lab5
                     }
                 }
 
-                // Diagonal 2
+                // Right to Left Diagonal
                 if (compGraph[7] == 2)
                 {
                     if (currentGame.grid[2, 0] == currentGame.grid[1, 1] && currentGame.grid[2, 0] != CellContent.N)
@@ -213,7 +212,7 @@ namespace Lab5
                         if (currentGame.grid[1, 1] == CellContent.N)
                         {
                             currentGame.grid[1, 1] = CellContent.O;
-                            compGraph[7]++;        //diag 2 possible
+                            compGraph[7]++;
                             player = whosMove.user;
                             this.numOfMoves++;
                             isWinner(currentGame);
@@ -535,7 +534,7 @@ namespace Lab5
                     return;
                 }
 
-                // Bottom left
+                // Bottom Left
                 if (currentGame.grid[2, 0] == GameEngine.CellContent.N)
                 {
                     currentGame.grid[2, 0] = GameEngine.CellContent.O;
@@ -548,7 +547,7 @@ namespace Lab5
                     return;
                 }
 
-                // Top middle
+                // Top Middle
                 if (currentGame.grid[0, 1] == GameEngine.CellContent.N)
                 {
                     currentGame.grid[0, 1] = GameEngine.CellContent.O;
@@ -560,7 +559,7 @@ namespace Lab5
                     return;
                 }
 
-                // Bottom middle
+                // Bottom Middle
                 if (currentGame.grid[2, 1] == GameEngine.CellContent.N)
                 {
                     currentGame.grid[2, 1] = GameEngine.CellContent.O;
@@ -584,7 +583,7 @@ namespace Lab5
                     return;
                 }
 
-                // Middle right
+                // Middle Right
                 if (currentGame.grid[1, 2] == GameEngine.CellContent.N)
                 {
                     currentGame.grid[1, 2] = GameEngine.CellContent.O;
