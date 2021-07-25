@@ -124,7 +124,7 @@ namespace Lab5
             this.Invalidate();
         }
 
-        // Draw Xs
+        // Draw X's
         public void drawX(int i, int j, Graphics g)
         {
             g.DrawLine(Pens.Black, i * BLOCK + DELTA, j * BLOCK + DELTA, (i * BLOCK) + BLOCK - DELTA, (j * BLOCK) + BLOCK - DELTA);
