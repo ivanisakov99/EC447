@@ -1,5 +1,7 @@
 # <ins>Lab 6 - Drawing GUI</ins>
 
+This assignment attempts to utilize most of the skills you have learned up to this point. It involves creating a simple drawing program.
+
 1. Use an ArrayList or generic List<> to save each graphic object for painting.
 2. You will draw rectangles with border and/or fill color.
 3. Undo deletes the last graphics object in the list. Be sure the program doesn’t crash if you try to undo an empty list.Create a base class from which all graphics elements are derived.
