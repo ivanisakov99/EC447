@@ -11,7 +11,6 @@ namespace Lab6
     {
         public Pen myPen;
         public Brush myBrush;
-
         public Rectangle myRect;
 
         public RectPB(Pen p, Brush b, Rectangle r)

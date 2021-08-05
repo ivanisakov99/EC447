@@ -21,8 +21,7 @@ namespace Lab6
         // Corners of the rectangles
         Point corner1 = new Point(-1, -1), corner2 = new Point(-1, -1);
 
-        // Local settings
-        //int outlinePenC, fillC, penWidth;
+        // Global selection for the pen and the brush
         Pen myPen = null;
         Brush myBrush = null;
 
@@ -37,12 +36,13 @@ namespace Lab6
             base.OnPaint(e);
             Graphics g = e.Graphics;
            
+            // Draw each rectangle in the list
             foreach (RectPB rect in rectangles)
             {
                 rect.DrawRectangles(g);
             }
 
-            // Point for the click
+            // Draw the point where the mouse was clicked
             if (corner1.X != -1 && corner1.Y != -1)
             {
                 g.FillEllipse(Brushes.Black, corner1.X - 10 / 2, corner1.Y - 10 / 2, 10, 10);
@@ -51,12 +51,14 @@ namespace Lab6
 
         private void clearToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Clear the array
             rectangles.Clear();
             Invalidate();
         }
 
         private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Pop up the settings dialog
             sDialog.ShowDialog();
             if(sDialog.DialogResult == DialogResult.OK)
             {
@@ -104,6 +106,7 @@ namespace Lab6
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            // Kill the programme with exit code
             System.Windows.Forms.Application.Exit();
         }
 
@@ -120,12 +123,12 @@ namespace Lab6
                 // Second click/coordinate
                 else
                 {
-                    //corner2 = new Point(e.X, e.Y);
-                    
-                    //
+                    // Check if the settings are chosen
                     if(myBrush == null && myPen == null)
                     {
                         MessageBox.Show("Fill and or pen/outline colour must be selected.", "", MessageBoxButtons.OK);
+                        
+                        // Reset the point
                         corner1.X = corner1.Y = -1;
                         Invalidate();
                     }
@@ -136,6 +139,7 @@ namespace Lab6
                         int width = Math.Abs(corner1.X - corner2.X);
                         int height = Math.Abs(corner1.Y - corner2.Y);
 
+                        // Determine the top left corner of the rectangle
                         Point topLeft;
                         // Same or corner1 is the top left one and corner2 is the bottom right one
                         if((corner1 == corner2) || (corner1.X < corner2.X && corner1.Y < corner2.Y))
@@ -166,7 +170,7 @@ namespace Lab6
                         RectPB rect = new RectPB(myPen, myBrush, myRectangle);
                         rectangles.Add(rect);
 
-                        //
+                        // Reset the point, so that the dot dissapears
                         corner1.X = corner1.Y = -1;
                         Invalidate();
                     }
@@ -176,7 +180,7 @@ namespace Lab6
 
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // If there are shapes to remove
+            // Check if there are shapes to remove, so that no exception occurs
             if (rectangles.Count > 0)
             {
                 rectangles.RemoveAt(rectangles.Count - 1);

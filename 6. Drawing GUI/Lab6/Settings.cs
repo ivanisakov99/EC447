@@ -19,8 +19,8 @@ namespace Lab6
         public Settings()
         {
             InitializeComponent();
-            listBoxOutlinePenC.SelectedIndex = 0;
-            listBoxFillC.SelectedIndex = listBoxPenWidth.SelectedIndex = 0;
+            // Zero out all of the indexes
+            listBoxOutlinePenC.SelectedIndex = listBoxFillC.SelectedIndex = listBoxPenWidth.SelectedIndex = 0;
         }
 
         protected override void OnShown(EventArgs e)
