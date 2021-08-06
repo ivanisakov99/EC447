@@ -19,6 +19,7 @@ namespace Lab6
         public Settings()
         {
             InitializeComponent();
+            
             // Zero out all of the indexes
             listBoxOutlinePenC.SelectedIndex = listBoxFillC.SelectedIndex = listBoxPenWidth.SelectedIndex = 0;
         }

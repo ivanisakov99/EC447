@@ -22,11 +22,13 @@ namespace Lab6
 
         public virtual void DrawRectangles(Graphics g)
         {
+            // Draw the fill first, if there is any
             if(myBrush != null)
             {
                 g.FillRectangle(myBrush, myRect);
             }
-
+            
+            // Then draw the border
             if (myPen != null)
             {
                 g.DrawRectangle(myPen, myRect);

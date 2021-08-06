@@ -15,6 +15,7 @@ namespace Lab6
     {
         // Array of rectangles
         ArrayList rectangles = new ArrayList();
+
         // Settings dialog
         Settings sDialog = new Settings();
 
