@@ -17,3 +17,5 @@ This assignment attempts to utilize most of the skills you have learned up to th
 13. Override the settings dialog base class OnShown to get control when the user opens the dialog.
 
 //
+
+
